@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+body{
+    background-color: #F8F8F8;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: orange;
+   
+
+} 
+.logo{
+    width: 260px;
+    height: 50px;
+}
+.main-menu-ul{
+    display: flex;
+}
+.main-menu-li a{
+    color: #fff;
+}
+.main-menu-ul li a {
+    padding: 0 25px;
+    line-height: 30px;
+    display: inline-block;
+
+}
+.catoriges-ul,.sub-catoriges-ul{
+    transition: all 0.2s ease-in-out;
+    padding: 20px 0;
+    box-shadow: 12px 14px 15px 0px rgba(240,240,240,1);
+    border-radius: 12px;
+    width: 200px;
+    display: none;
+}
+.catoriges-li{
+    position: relative;
+}
+.main-menu-ul li:hover .catoriges-ul {
+    color: black;
+    background-color: white;
+    position: absolute;
+    display: block;
+}
+.catoriges-li:hover .sub-catoriges-ul{
+    left: 100%;
+    top: 0;
+    min-width: min-content  ;
+    color: black;
+    background-color: white;
+    position: absolute;
+    display: block;
+}
+.catoriges-li a,
+.sub-catoriges-li a{
+    color: #000;
+}
+.catoriges-li a:hover,
+.sub-catoriges-li a:hover{
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-left: 10px;
+    color: orange;
+}
+
+
